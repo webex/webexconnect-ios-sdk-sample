@@ -1,0 +1,993 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020A92662DBA469000FB99C0 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 020A92652DBA469000FB99C0 /* FirebaseCore */; };
+		020A92682DBA469000FB99C0 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 020A92672DBA469000FB99C0 /* FirebaseMessaging */; };
+		020EA4112D142DA0003B4C03 /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020EA4102D142DA0003B4C03 /* CreateThreadView.swift */; };
+		022A52DA2D12BA14009D10FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022A52CC2D12BA14009D10FA /* Assets.xcassets */; };
+		022A52DB2D12BA14009D10FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022A52D52D12BA14009D10FA /* Preview Assets.xcassets */; };
+		022A52E02D12BA14009D10FA /* WebexConnectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A52C92D12BA14009D10FA /* WebexConnectDemo.swift */; };
+		022A52E12D12BA14009D10FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A52C72D12BA14009D10FA /* Constants.swift */; };
+		022A52E22D12BA14009D10FA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A52D72D12BA14009D10FA /* LoginView.swift */; };
+		022A52E32D12BA14009D10FA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A52CF2D12BA14009D10FA /* HomeView.swift */; };
+		022A52E42D12BA14009D10FA /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A52D12D12BA14009D10FA /* NotificationsView.swift */; };
+		022A52E52D12BA14009D10FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A52CA2D12BA14009D10FA /* SceneDelegate.swift */; };
+		022A52E62D12BA14009D10FA /* MessagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A52D02D12BA14009D10FA /* MessagingView.swift */; };
+		022A52E82D12BA14009D10FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A52C62D12BA14009D10FA /* AppDelegate.swift */; };
+		022A53012D12C1AC009D10FA /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A52FF2D12C1AC009D10FA /* ViewExtension.swift */; };
+		022A53032D12C1AC009D10FA /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A52FD2D12C1AC009D10FA /* ProgressView.swift */; };
+		022A53042D12C1AC009D10FA /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A52FE2D12C1AC009D10FA /* LogManager.swift */; };
+		022A53062D12C241009D10FA /* FCMTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A53052D12C241009D10FA /* FCMTokenManager.swift */; };
+		026E5EDA2DBC004B004A3969 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E5ED92DBC004B004A3969 /* LoginViewModel.swift */; };
+		026E5EDC2DBC02B5004A3969 /* KeyBoardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E5EDB2DBC02B5004A3969 /* KeyBoardHelper.swift */; };
+		028ECDBB2DBF4F870049FD4D /* DeeplinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028ECDBA2DBF4F870049FD4D /* DeeplinkHandler.swift */; };
+		028ECDC12DBF59720049FD4D /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028ECDC02DBF59720049FD4D /* ConversationViewModel.swift */; };
+		028ECDC32DBF5D470049FD4D /* InAppMessagingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028ECDC22DBF5D470049FD4D /* InAppMessagingViewModel.swift */; };
+		0293055B2D487BD600249368 /* InAppMessagingDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0293055A2D487BD600249368 /* InAppMessagingDelegateHandler.swift */; };
+		029305852D4B413F00249368 /* NotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0293057E2D4B413F00249368 /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		029305B32D51088900249368 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029305B22D51088900249368 /* DateExtension.swift */; };
+		02C149EC2D14465800D8E2E9 /* ThreadsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C149EB2D14465800D8E2E9 /* ThreadsViewModel.swift */; };
+		02C149F12D15919E00D8E2E9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C149F02D15919E00D8E2E9 /* ProfileView.swift */; };
+		02D186A82D59D82700C8DC85 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D186A72D59D82700C8DC85 /* AppFonts.swift */; };
+		02D186AA2D5C62A700C8DC85 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D186A92D5C62A700C8DC85 /* AppColors.swift */; };
+		02DB4B7E2D40BE7900E0AE3A /* InputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DB4B7D2D40BE7900E0AE3A /* InputFieldView.swift */; };
+		02DB4B802D41118700E0AE3A /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DB4B7F2D41118700E0AE3A /* RoundedCorners.swift */; };
+		02FBD76F2D1A5A2600AA3420 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FBD76E2D1A5A2600AA3420 /* ConversationView.swift */; };
+		02FEC3FC2DBA36730053D767 /* WebexConnectCore in Frameworks */ = {isa = PBXBuildFile; productRef = 02FEC3FB2DBA36730053D767 /* WebexConnectCore */; };
+		02FEC3FE2DBA36730053D767 /* WebexConnectInAppMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 02FEC3FD2DBA36730053D767 /* WebexConnectInAppMessaging */; };
+		02FEC4002DBA36730053D767 /* WebexConnectNotificationServiceExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 02FEC3FF2DBA36730053D767 /* WebexConnectNotificationServiceExtension */; };
+		02FEC4022DBA36730053D767 /* WebexConnectPush in Frameworks */ = {isa = PBXBuildFile; productRef = 02FEC4012DBA36730053D767 /* WebexConnectPush */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		025482AB2D0E8B6600D7B20C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0254828D2D0E8B6400D7B20C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 025482942D0E8B6400D7B20C;
+			remoteInfo = ModularisedSDKSwiftUIDemoApp;
+		};
+		025482B52D0E8B6600D7B20C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0254828D2D0E8B6400D7B20C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 025482942D0E8B6400D7B20C;
+			remoteInfo = ModularisedSDKSwiftUIDemoApp;
+		};
+		029305832D4B413F00249368 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0254828D2D0E8B6400D7B20C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0293057D2D4B413F00249368;
+			remoteInfo = NotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0293058A2D4B413F00249368 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				029305852D4B413F00249368 /* NotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02D186A32D59A37C00C8DC85 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		020EA4102D142DA0003B4C03 /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
+		022A52C62D12BA14009D10FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		022A52C72D12BA14009D10FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		022A52C92D12BA14009D10FA /* WebexConnectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebexConnectDemo.swift; sourceTree = "<group>"; };
+		022A52CA2D12BA14009D10FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		022A52CC2D12BA14009D10FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		022A52CF2D12BA14009D10FA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		022A52D02D12BA14009D10FA /* MessagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingView.swift; sourceTree = "<group>"; };
+		022A52D12D12BA14009D10FA /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		022A52D52D12BA14009D10FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		022A52D72D12BA14009D10FA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		022A52FD2D12C1AC009D10FA /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		022A52FE2D12C1AC009D10FA /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		022A52FF2D12C1AC009D10FA /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		022A53052D12C241009D10FA /* FCMTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCMTokenManager.swift; sourceTree = "<group>"; };
+		025482952D0E8B6400D7B20C /* WebexConnectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebexConnectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		025482AA2D0E8B6600D7B20C /* WebexConnectDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebexConnectDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		025482B42D0E8B6600D7B20C /* WebexConnectDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebexConnectDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		026E5ED92DBC004B004A3969 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		026E5EDB2DBC02B5004A3969 /* KeyBoardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardHelper.swift; sourceTree = "<group>"; };
+		028ECDBA2DBF4F870049FD4D /* DeeplinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkHandler.swift; sourceTree = "<group>"; };
+		028ECDC02DBF59720049FD4D /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
+		028ECDC22DBF5D470049FD4D /* InAppMessagingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppMessagingViewModel.swift; sourceTree = "<group>"; };
+		0293055A2D487BD600249368 /* InAppMessagingDelegateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppMessagingDelegateHandler.swift; sourceTree = "<group>"; };
+		0293055C2D4882FD00249368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0293057E2D4B413F00249368 /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		029305AB2D4B5DCC00249368 /* WebexConnectDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebexConnectDemo.entitlements; sourceTree = "<group>"; };
+		029305B22D51088900249368 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		02C149EB2D14465800D8E2E9 /* ThreadsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsViewModel.swift; sourceTree = "<group>"; };
+		02C149F02D15919E00D8E2E9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		02D186A72D59D82700C8DC85 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		02D186A92D5C62A700C8DC85 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		02DB4B7D2D40BE7900E0AE3A /* InputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldView.swift; sourceTree = "<group>"; };
+		02DB4B7F2D41118700E0AE3A /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
+		02FBD76E2D1A5A2600AA3420 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		029305862D4B413F00249368 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0293057D2D4B413F00249368 /* NotificationServiceExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0293057F2D4B413F00249368 /* NotificationServiceExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (029305862D4B413F00249368 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = NotificationServiceExtension; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		025482922D0E8B6400D7B20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020A92682DBA469000FB99C0 /* FirebaseMessaging in Frameworks */,
+				02FEC3FC2DBA36730053D767 /* WebexConnectCore in Frameworks */,
+				020A92662DBA469000FB99C0 /* FirebaseCore in Frameworks */,
+				02FEC4022DBA36730053D767 /* WebexConnectPush in Frameworks */,
+				02FEC3FE2DBA36730053D767 /* WebexConnectInAppMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025482A72D0E8B6600D7B20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025482B12D0E8B6600D7B20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0293057B2D4B413F00249368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FEC4002DBA36730053D767 /* WebexConnectNotificationServiceExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		020A92632DBA3A2000FB99C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				022A52CC2D12BA14009D10FA /* Assets.xcassets */,
+				029305AB2D4B5DCC00249368 /* WebexConnectDemo.entitlements */,
+				0293055C2D4882FD00249368 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		022A52CB2D12BA14009D10FA /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				022A52C62D12BA14009D10FA /* AppDelegate.swift */,
+				022A52CA2D12BA14009D10FA /* SceneDelegate.swift */,
+				0293055A2D487BD600249368 /* InAppMessagingDelegateHandler.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		022A52D62D12BA14009D10FA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				022A52D52D12BA14009D10FA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		022A53002D12C1AC009D10FA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				022A52C72D12BA14009D10FA /* Constants.swift */,
+				022A52FF2D12C1AC009D10FA /* ViewExtension.swift */,
+				02DB4B7F2D41118700E0AE3A /* RoundedCorners.swift */,
+				029305B22D51088900249368 /* DateExtension.swift */,
+				02D186A72D59D82700C8DC85 /* AppFonts.swift */,
+				02D186A92D5C62A700C8DC85 /* AppColors.swift */,
+				026E5EDB2DBC02B5004A3969 /* KeyBoardHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0254828C2D0E8B6400D7B20C = {
+			isa = PBXGroup;
+			children = (
+				025482972D0E8B6400D7B20C /* WebexConnectDemo */,
+				0293057F2D4B413F00249368 /* NotificationServiceExtension */,
+				025482AD2D0E8B6600D7B20C /* WebexConnectDemoTests */,
+				025482B72D0E8B6600D7B20C /* WebexConnectDemoUITests */,
+				025482962D0E8B6400D7B20C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		025482962D0E8B6400D7B20C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				025482952D0E8B6400D7B20C /* WebexConnectDemo.app */,
+				025482AA2D0E8B6600D7B20C /* WebexConnectDemoTests.xctest */,
+				025482B42D0E8B6600D7B20C /* WebexConnectDemoUITests.xctest */,
+				0293057E2D4B413F00249368 /* NotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		025482972D0E8B6400D7B20C /* WebexConnectDemo */ = {
+			isa = PBXGroup;
+			children = (
+				02C149F02D15919E00D8E2E9 /* ProfileView.swift */,
+				022A52D72D12BA14009D10FA /* LoginView.swift */,
+				022A52CF2D12BA14009D10FA /* HomeView.swift */,
+				022A52D02D12BA14009D10FA /* MessagingView.swift */,
+				022A52D12D12BA14009D10FA /* NotificationsView.swift */,
+				020EA4102D142DA0003B4C03 /* CreateThreadView.swift */,
+				02FBD76E2D1A5A2600AA3420 /* ConversationView.swift */,
+				020A92632DBA3A2000FB99C0 /* Resources */,
+				022A53002D12C1AC009D10FA /* Utilities */,
+				026E5EBA2DBBF97E004A3969 /* App */,
+				022A52CB2D12BA14009D10FA /* Delegates */,
+				02C149EA2D14463900D8E2E9 /* ViewModels */,
+				026E5EB82DBB8B9F004A3969 /* Managers */,
+				026E5EB92DBBAEC4004A3969 /* CustomViews */,
+				022A52D62D12BA14009D10FA /* Preview Content */,
+			);
+			path = WebexConnectDemo;
+			sourceTree = "<group>";
+		};
+		025482AD2D0E8B6600D7B20C /* WebexConnectDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebexConnectDemoTests;
+			sourceTree = "<group>";
+		};
+		025482B72D0E8B6600D7B20C /* WebexConnectDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebexConnectDemoUITests;
+			sourceTree = "<group>";
+		};
+		026E5EB82DBB8B9F004A3969 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				022A52FE2D12C1AC009D10FA /* LogManager.swift */,
+				022A53052D12C241009D10FA /* FCMTokenManager.swift */,
+				028ECDBA2DBF4F870049FD4D /* DeeplinkHandler.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		026E5EB92DBBAEC4004A3969 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				022A52FD2D12C1AC009D10FA /* ProgressView.swift */,
+				02DB4B7D2D40BE7900E0AE3A /* InputFieldView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		026E5EBA2DBBF97E004A3969 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				022A52C92D12BA14009D10FA /* WebexConnectDemo.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		02C149EA2D14463900D8E2E9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				026E5ED92DBC004B004A3969 /* LoginViewModel.swift */,
+				028ECDC22DBF5D470049FD4D /* InAppMessagingViewModel.swift */,
+				02C149EB2D14465800D8E2E9 /* ThreadsViewModel.swift */,
+				028ECDC02DBF59720049FD4D /* ConversationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		025482942D0E8B6400D7B20C /* WebexConnectDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025482BE2D0E8B6600D7B20C /* Build configuration list for PBXNativeTarget "WebexConnectDemo" */;
+			buildPhases = (
+				025482912D0E8B6400D7B20C /* Sources */,
+				025482922D0E8B6400D7B20C /* Frameworks */,
+				025482932D0E8B6400D7B20C /* Resources */,
+				0293058A2D4B413F00249368 /* Embed Foundation Extensions */,
+				02D186A32D59A37C00C8DC85 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				029305842D4B413F00249368 /* PBXTargetDependency */,
+			);
+			name = WebexConnectDemo;
+			productName = ModularisedSDKSwiftUIDemoApp;
+			productReference = 025482952D0E8B6400D7B20C /* WebexConnectDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		025482A92D0E8B6600D7B20C /* WebexConnectDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025482C12D0E8B6600D7B20C /* Build configuration list for PBXNativeTarget "WebexConnectDemoTests" */;
+			buildPhases = (
+				025482A62D0E8B6600D7B20C /* Sources */,
+				025482A72D0E8B6600D7B20C /* Frameworks */,
+				025482A82D0E8B6600D7B20C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				025482AC2D0E8B6600D7B20C /* PBXTargetDependency */,
+			);
+			name = WebexConnectDemoTests;
+			productName = ModularisedSDKSwiftUIDemoAppTests;
+			productReference = 025482AA2D0E8B6600D7B20C /* WebexConnectDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		025482B32D0E8B6600D7B20C /* WebexConnectDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025482C42D0E8B6600D7B20C /* Build configuration list for PBXNativeTarget "WebexConnectDemoUITests" */;
+			buildPhases = (
+				025482B02D0E8B6600D7B20C /* Sources */,
+				025482B12D0E8B6600D7B20C /* Frameworks */,
+				025482B22D0E8B6600D7B20C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				025482B62D0E8B6600D7B20C /* PBXTargetDependency */,
+			);
+			name = WebexConnectDemoUITests;
+			productName = ModularisedSDKSwiftUIDemoAppUITests;
+			productReference = 025482B42D0E8B6600D7B20C /* WebexConnectDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		0293057D2D4B413F00249368 /* NotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 029305872D4B413F00249368 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
+			buildPhases = (
+				0293057A2D4B413F00249368 /* Sources */,
+				0293057B2D4B413F00249368 /* Frameworks */,
+				0293057C2D4B413F00249368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0293057F2D4B413F00249368 /* NotificationServiceExtension */,
+			);
+			name = NotificationServiceExtension;
+			packageProductDependencies = (
+				02FEC3FF2DBA36730053D767 /* WebexConnectNotificationServiceExtension */,
+			);
+			productName = NotificationServiceExtension;
+			productReference = 0293057E2D4B413F00249368 /* NotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0254828D2D0E8B6400D7B20C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					025482942D0E8B6400D7B20C = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					025482A92D0E8B6600D7B20C = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 025482942D0E8B6400D7B20C;
+					};
+					025482B32D0E8B6600D7B20C = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 025482942D0E8B6400D7B20C;
+					};
+					0293057D2D4B413F00249368 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = 025482902D0E8B6400D7B20C /* Build configuration list for PBXProject "WebexConnectDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0254828C2D0E8B6400D7B20C;
+			packageReferences = (
+				02FEC3FA2DBA36730053D767 /* XCRemoteSwiftPackageReference "wxconnect-core-ios-sdk" */,
+				020A92642DBA469000FB99C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 025482962D0E8B6400D7B20C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				025482942D0E8B6400D7B20C /* WebexConnectDemo */,
+				025482A92D0E8B6600D7B20C /* WebexConnectDemoTests */,
+				025482B32D0E8B6600D7B20C /* WebexConnectDemoUITests */,
+				0293057D2D4B413F00249368 /* NotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		025482932D0E8B6400D7B20C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022A52DA2D12BA14009D10FA /* Assets.xcassets in Resources */,
+				022A52DB2D12BA14009D10FA /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025482A82D0E8B6600D7B20C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025482B22D0E8B6600D7B20C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0293057C2D4B413F00249368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		025482912D0E8B6400D7B20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022A53012D12C1AC009D10FA /* ViewExtension.swift in Sources */,
+				029305B32D51088900249368 /* DateExtension.swift in Sources */,
+				02D186AA2D5C62A700C8DC85 /* AppColors.swift in Sources */,
+				022A53032D12C1AC009D10FA /* ProgressView.swift in Sources */,
+				022A53042D12C1AC009D10FA /* LogManager.swift in Sources */,
+				022A53062D12C241009D10FA /* FCMTokenManager.swift in Sources */,
+				02DB4B7E2D40BE7900E0AE3A /* InputFieldView.swift in Sources */,
+				02D186A82D59D82700C8DC85 /* AppFonts.swift in Sources */,
+				028ECDC32DBF5D470049FD4D /* InAppMessagingViewModel.swift in Sources */,
+				0293055B2D487BD600249368 /* InAppMessagingDelegateHandler.swift in Sources */,
+				022A52E02D12BA14009D10FA /* WebexConnectDemo.swift in Sources */,
+				022A52E12D12BA14009D10FA /* Constants.swift in Sources */,
+				028ECDC12DBF59720049FD4D /* ConversationViewModel.swift in Sources */,
+				022A52E22D12BA14009D10FA /* LoginView.swift in Sources */,
+				022A52E32D12BA14009D10FA /* HomeView.swift in Sources */,
+				02FBD76F2D1A5A2600AA3420 /* ConversationView.swift in Sources */,
+				020EA4112D142DA0003B4C03 /* CreateThreadView.swift in Sources */,
+				022A52E42D12BA14009D10FA /* NotificationsView.swift in Sources */,
+				026E5EDC2DBC02B5004A3969 /* KeyBoardHelper.swift in Sources */,
+				022A52E52D12BA14009D10FA /* SceneDelegate.swift in Sources */,
+				02C149F12D15919E00D8E2E9 /* ProfileView.swift in Sources */,
+				022A52E62D12BA14009D10FA /* MessagingView.swift in Sources */,
+				026E5EDA2DBC004B004A3969 /* LoginViewModel.swift in Sources */,
+				028ECDBB2DBF4F870049FD4D /* DeeplinkHandler.swift in Sources */,
+				02C149EC2D14465800D8E2E9 /* ThreadsViewModel.swift in Sources */,
+				02DB4B802D41118700E0AE3A /* RoundedCorners.swift in Sources */,
+				022A52E82D12BA14009D10FA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025482A62D0E8B6600D7B20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025482B02D0E8B6600D7B20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0293057A2D4B413F00249368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		025482AC2D0E8B6600D7B20C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 025482942D0E8B6400D7B20C /* WebexConnectDemo */;
+			targetProxy = 025482AB2D0E8B6600D7B20C /* PBXContainerItemProxy */;
+		};
+		025482B62D0E8B6600D7B20C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 025482942D0E8B6400D7B20C /* WebexConnectDemo */;
+			targetProxy = 025482B52D0E8B6600D7B20C /* PBXContainerItemProxy */;
+		};
+		029305842D4B413F00249368 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0293057D2D4B413F00249368 /* NotificationServiceExtension */;
+			targetProxy = 029305832D4B413F00249368 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		025482BC2D0E8B6600D7B20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		025482BD2D0E8B6600D7B20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		025482BF2D0E8B6600D7B20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WebexConnectDemo/Resources/WebexConnectDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_ASSET_PATHS = "\"WebexConnectDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 6Z4PAY6DH7;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WebexConnectDemo/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WebexConnectDemo;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webexconnect.modularisedclientdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		025482C02D0E8B6600D7B20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WebexConnectDemo/Resources/WebexConnectDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_ASSET_PATHS = "\"WebexConnectDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 6Z4PAY6DH7;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WebexConnectDemo/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WebexConnectDemo;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webexconnect.modularisedclientdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		025482C22D0E8B6600D7B20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9X38D433RE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webex.connect.ModularisedSDKSwiftUIDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebexConnectDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WebexConnectDemo";
+			};
+			name = Debug;
+		};
+		025482C32D0E8B6600D7B20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9X38D433RE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webex.connect.ModularisedSDKSwiftUIDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebexConnectDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WebexConnectDemo";
+			};
+			name = Release;
+		};
+		025482C52D0E8B6600D7B20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9X38D433RE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webex.connect.ModularisedSDKSwiftUIDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WebexConnectDemo;
+			};
+			name = Debug;
+		};
+		025482C62D0E8B6600D7B20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9X38D433RE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webex.connect.ModularisedSDKSwiftUIDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WebexConnectDemo;
+			};
+			name = Release;
+		};
+		029305882D4B413F00249368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationServiceExtension/NotificationServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z4PAY6DH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webexconnect.modularisedclientdemo.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		029305892D4B413F00249368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationServiceExtension/NotificationServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z4PAY6DH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webexconnect.modularisedclientdemo.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		025482902D0E8B6400D7B20C /* Build configuration list for PBXProject "WebexConnectDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025482BC2D0E8B6600D7B20C /* Debug */,
+				025482BD2D0E8B6600D7B20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025482BE2D0E8B6600D7B20C /* Build configuration list for PBXNativeTarget "WebexConnectDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025482BF2D0E8B6600D7B20C /* Debug */,
+				025482C02D0E8B6600D7B20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025482C12D0E8B6600D7B20C /* Build configuration list for PBXNativeTarget "WebexConnectDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025482C22D0E8B6600D7B20C /* Debug */,
+				025482C32D0E8B6600D7B20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025482C42D0E8B6600D7B20C /* Build configuration list for PBXNativeTarget "WebexConnectDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025482C52D0E8B6600D7B20C /* Debug */,
+				025482C62D0E8B6600D7B20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		029305872D4B413F00249368 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				029305882D4B413F00249368 /* Debug */,
+				029305892D4B413F00249368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		020A92642DBA469000FB99C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+		02FEC3FA2DBA36730053D767 /* XCRemoteSwiftPackageReference "wxconnect-core-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/webex/wxconnect-core-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		020A92652DBA469000FB99C0 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 020A92642DBA469000FB99C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		020A92672DBA469000FB99C0 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 020A92642DBA469000FB99C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		02FEC3FB2DBA36730053D767 /* WebexConnectCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02FEC3FA2DBA36730053D767 /* XCRemoteSwiftPackageReference "wxconnect-core-ios-sdk" */;
+			productName = WebexConnectCore;
+		};
+		02FEC3FD2DBA36730053D767 /* WebexConnectInAppMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02FEC3FA2DBA36730053D767 /* XCRemoteSwiftPackageReference "wxconnect-core-ios-sdk" */;
+			productName = WebexConnectInAppMessaging;
+		};
+		02FEC3FF2DBA36730053D767 /* WebexConnectNotificationServiceExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02FEC3FA2DBA36730053D767 /* XCRemoteSwiftPackageReference "wxconnect-core-ios-sdk" */;
+			productName = WebexConnectNotificationServiceExtension;
+		};
+		02FEC4012DBA36730053D767 /* WebexConnectPush */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02FEC3FA2DBA36730053D767 /* XCRemoteSwiftPackageReference "wxconnect-core-ios-sdk" */;
+			productName = WebexConnectPush;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0254828D2D0E8B6400D7B20C /* Project object */;
+}
